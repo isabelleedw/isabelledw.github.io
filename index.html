@@ -9,7 +9,18 @@
   <link rel="shortcut icon" href="assets/images/logo5.png" type="image/x-icon">
   <meta name="description" content="">
   
-  
+  <script language="javascript">
+    function changeStuff(){
+      thingtoChange = document.getElementById("fact");
+      thingtoChange.innerHTML = "The tallest sunflower on record was over 30 feet tall. In the summer of 2014, the tallest sunflower ever recorded was grown in Germany and measured 30 feet, 1 inch!";
+      }
+    function clearChange(){
+      thingtoChange = document.getElementById("facts");
+      thingtoChange.innerHTML = "<p>Find out an interesting fact about the happiest flower on earth!</p>";
+    }
+  </script>
+    
+    
   <title>Imagination Sunflower Farm</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -25,6 +36,10 @@
   
 </head>
 <body>
+  
+  <p style="margin-top: 10em" id:"facts"> Find out an interesting fact about the happiest flower on earth!</p>
+  <button onclick="javascript:changestuff()">Click for Fact</button>
+  <button onclick="javascript:clearChange()">Back</button>
   
   <section data-bs-version="5.1" class="header10 cid-sKkPqXMFvF" id="header10-1">
 
